@@ -1,0 +1,20 @@
+﻿<Window x:Class="Clicker.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Clicker"
+        mc:Ignorable="d"
+        Title="About" Height="205.406" Width="300" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,2">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="emailBlock" HorizontalAlignment="Left" Height="28" Margin="10,132,0,0" VerticalAlignment="Top" Width="222">
+            <Hyperlink Name="emailLink" NavigateUri="mailto:rong.yuming@qq.com" Click="emailLink_Click">rong.yuming@qq.com </Hyperlink>
+        </TextBlock>
+        <TextBlock x:Name="helpBlock" HorizontalAlignment="Left" Height="58" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="261"><Run Text="点击Tap按钮或敲空格键或回车键打节拍。"/><LineBreak/><Run Text="从第一次点击Tap按钮开始自动计时。"/><LineBreak/><Run Text="点Reset按钮"/><Run Text="或Esc键"/><Run Text="归零。"/><LineBreak/><Run/></TextBlock>
+        <TextBlock x:Name="authorBlock" HorizontalAlignment="Left" Height="24" Margin="10,108,0,0" TextWrapping="Wrap" Text="Author: Steven Rong" VerticalAlignment="Top" Width="211"/>
+
+    </Grid>
+</Window>
